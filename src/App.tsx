@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { DashboardLayout, PublicLayout } from './components/Layout';
 import { LandingPage } from './pages/LandingPage';

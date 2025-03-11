@@ -1,4 +1,3 @@
-import React from 'react';
 import { Plus, Edit2, Eye } from 'lucide-react';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
@@ -22,17 +21,17 @@ export const Dashboard = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {tournaments.map((tournament) => (
           <Card key={tournament.id} className="relative">
-            <div className="absolute top-4 right-4">
-              <span className={clsx(
+            <div className="absolute top-4 right-4 z-10">
+                <span  className={clsx(
                 'px-3 py-1 rounded-full text-sm font-medium',
                 {
-                  'bg-green-500/20 text-green-500': tournament.status === 'Ongoing',
-                  'bg-blue-500/20 text-blue-500': tournament.status === 'Upcoming',
-                  'bg-gray-500/20 text-gray-500': tournament.status === 'Finished',
+                'bg-[#22c55e] text-[#0c2e18]': tournament.status === 'Ongoing',
+                  'bg-[#3b82f6] text-[#102341]': tournament.status === 'Upcoming',
+                  'bg-[#6b7280] text-[#2a2b2c]': tournament.status === 'Finished',
                 }
-              )}>
+                )}>
                 {tournament.status}
-              </span>
+                </span>
             </div>
             <div className="relative h-40 mb-4 rounded-lg overflow-hidden">
               <img

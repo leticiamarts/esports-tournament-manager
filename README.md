@@ -1,5 +1,4 @@
 # Esports Tournament Manager
-Teste Acesso Pedro
 Este é um projeto que utiliza o npm para gerenciar dependências e executar o ambiente de desenvolvimento. Abaixo estão as instruções para instalar as dependências e rodar o projeto.
 
 ## Requisitos

@@ -26,5 +26,27 @@ npm install
 
 Para rodar o servidor de desenvolvimento, use o comando:
 ```bash
+docker-compose up -d
+
+docker exec -it esports-tournament-manager-web-1 bash
+
+php /var/www/html/create_table.php
+
+exit
+
 npm run dev
 ```
+
+visualizar banco:
+
+```bash
+docker exec -it esports-tournament-manager-db-1 psql -U esports esports_db
+
+\dt
+
+SELECT * FROM users;
+
+-- Sair
+\q
+```
+

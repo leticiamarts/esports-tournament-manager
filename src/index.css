@@ -25,6 +25,6 @@
   }
 
   .card {
-    @apply bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 hover:transform hover:scale-[1.02] transition-all duration-200;
-  }
+    @apply bg-gray-800/50 rounded-xl p-6 hover:transform hover:scale-[1.02] transition-all duration-200 backdrop-blur-none;
+    } 
 }

@@ -6,6 +6,8 @@ import { TournamentCreation } from './pages/TournamentCreation';
 import { Profile } from './pages/Profile';
 import { LiveMatch } from './pages/LiveMatch';
 import { Support } from './pages/Support';
+import { Sobre } from './pages/sobre';
+import { Cadastro } from './pages/Cadastro';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/profile" element={<DashboardLayout><Profile /></DashboardLayout>} />
         <Route path="/match/:id" element={<DashboardLayout><LiveMatch /></DashboardLayout>} />
         <Route path="/support" element={<DashboardLayout><Support /></DashboardLayout>} />
+        <Route path="/sobre" element={<PublicLayout><Sobre /></PublicLayout>} />
+        <Route path="/cadastro" element={<PublicLayout><Cadastro /></PublicLayout>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

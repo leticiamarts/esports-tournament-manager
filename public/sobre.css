@@ -1,0 +1,136 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Header Styles */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.main-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.main-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-menu a:hover {
+    color: #4F46E5; /* Primary color */
+}
+
+/* Main Content Styles */
+.about-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 5%;
+}
+
+.mission h1 {
+    font-size: 2.5rem;
+    color: #4F46E5;
+    margin-bottom: 2rem;
+}
+
+.mission article {
+    margin-bottom: 3rem;
+    background-color: #252525;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2 {
+    font-size: 1.8rem;
+    color: #4F46E5;
+    margin-bottom: 1rem;
+}
+
+.mission p {
+    margin-bottom: 1rem;
+}
+
+.mission ul {
+    padding-left: 1.5rem;
+}
+
+.mission li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+.page-footer {
+    background-color: #121212;
+    padding: 2rem 5%;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.company-info h3 {
+    color: #4F46E5;
+    margin-bottom: 1rem;
+}
+
+.company-info p {
+    margin: 0.5rem 0;
+}
+
+.developer-info a {
+    color: #4F46E5;
+    text-decoration: none;
+}
+
+.developer-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .main-menu ul {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+}

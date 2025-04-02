@@ -31,7 +31,7 @@ export const Cadastro = () => {
             } else {
                 setMessage(data.message);
             }
-        } catch (error) {
+        } catch {
             setMessage('Erro ao conectar com o servidor');
         }
     };

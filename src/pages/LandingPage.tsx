@@ -185,6 +185,16 @@ export const LandingPage = () => {
             <p>&copy; 2024 eSports Tournament Platform. All rights reserved.</p>
           </div>
         </div>
+        <div>
+          <h3 className="text-xl font-bold mb-4 font-orbitron">Quick Links</h3>
+          <ul className="space-y-2 text-gray-400">
+            <li><Link to="/" className="hover:text-primary">Home</Link></li>
+            <li><Link to="/sobre" className="hover:text-primary">Sobre</Link></li>
+            <li><Link to="/dashboard" className="hover:text-primary">Tournaments</Link></li>
+            <li><Link to="/support" className="hover:text-primary">Support</Link></li>
+            <li><Link to="/cadastro" className="hover:text-primary">Cadastrar-se</Link></li>
+          </ul>
+        </div>
       </footer>
     </div>
   );
